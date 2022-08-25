@@ -1,15 +1,16 @@
-# ✏️ TWICE_app
+# ✏️ Nav_Fragment
 
 ## 소개
-### Splash 화면 이후, 이미지를 클릭하면 해당 이미지를 확대해 보여주는 app입니다.
+### Navigation 기능을 이용하여 Fragment의 이동을 학습하였습니다.
 
 <br>
 
 ## 배운점
-- AndroidManifest.xml 파일을 수정하여 실행시작 파일을 수정할 수 있다.
-- Handler을 이용하여 Splash 화면 제작하기
-- margin과 padding
-- CardView를 활용한 cardCornerRadius
-- Kotlin의 경우 findViewById를 이용하여 id값을 가져오는 방법도 있지만, 바로 id값을 입력해도 사용할 수 있다.
-- Intent를 전환할 때 intent.putExtra(name, value)를 이용하여 데이터를 함께 전달할 수 있다.
-- Intent를 전환하여 사진을 확대할 때, 각 사진별로 activity를 제작하는 것이 아닌, setImageResource를 이용하여 한 액티비티 내에서 이미지를 수정하는 방식으로 해결 가능하다
+기존의 경우 다른 화면으로 전환하기 위해서는 새로운 Activity를 만들어서 이동시켜 주었습니다. 그러나 그렇게 된다면 더 복잡해지고 메모리적으로도 효울적이지 못하다는 단점이 존재합니다. 
+
+이러한 단점을 해결하기 위해서 Navigation과 Fragment에 대해서 학습하였다. Navigation을 이용하게 된다면 MainActivity는 고정시켜 두고, Fragment만 이동하며 다른 화면을 보여줄 수 있게 된다.
+
+## 적용법
+MainNavigation 화면과 이동할 Fragment들을 만들어 준다.
+이후 MainNavigation에서 서로 이동시키고 싶은 Fragment 끼리 연결시켜 준다.
+본인의 경우 이동 방식을 버튼으로 처리하였기 때문에, 버튼의 setOnClickListener을 이용하여 연결부의 아이디를 불러오는 형식으로 navigate를 실행시켜주었다.
