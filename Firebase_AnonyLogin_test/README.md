@@ -1,18 +1,16 @@
-# ✏️ Firebase_AnonyLogin_test
+# ✏️ SingerList_app
 
 ## 소개
-Firebase를 이용한 익명로그인에 대해 학습하였습니다.
+RecyclerView와 Navigation기능을 이용하여 가수의 사진을 클릭하면 노래 리스트를 보여주는 어플
 
 <br>
 
 ## 배운점
-- 서버를 구축하기 위해서는 여러 복잡한 과정이 필요하지만 Firebase를 이용한다면 쉽게 구현이 가능하다. 
-- 비동기식으로 진행된다.
+RecyclerView와 Navigation을 통한 Fragment 전환에 대해서 학습하였다.
 
 <br>
 
 ## 시행착오
-기본적으로 모든 내용은 Firebase 공식 문서에 상세히 작성되어 있다. 그러나 레포지토리를 추가하는 과정에서 주어진 코드를 build.gradle에 추가가 안되는 오류가 발생했다. 
+RecyclerView를 이용하여 음악 리스트를 출력하는 과정에서 노래가 한 줄마다 출력되지 않고, 음악 사이사이에 많은 여백이 생겨 스크롤을 해야 확인할 수 있다는 문제점이 발생했다. 이 경우는 rv_item 파일 즉, RecyclerView에서 Item을 나타내는 파일의 layout이 잘못 설정되어 있어서 발생한 문제였다.
 
-검색결과 그 이유는 Arctic Fox 버전 이후에 생성된 프로젝트는 build.gradle이 아닌 settings.gradle에 allprojects레포지토리를 추가해야 하기 때문임을 알 수 있었다.
-
+Text의 layout이 모두 match_content로 설정되어 있어서 출력되는 Text들이 차례대로 출력되지 못하고 한 페이지에 하나씩 출력되기에 많은 공백이 발생하는 것이었다. 이를 wrap_content로 수정해주자 원하고자 하는 결과값을 얻을 수 있었다.
