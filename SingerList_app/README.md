@@ -1,4 +1,4 @@
-# ✏️ ListView_ex
+# ✏️ SingerList_app
 
 ## 소개
 리스트뷰와 어댑터에 대해 학습하였습니다.
