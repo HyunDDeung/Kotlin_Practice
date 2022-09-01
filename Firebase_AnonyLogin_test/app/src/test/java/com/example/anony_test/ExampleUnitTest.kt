@@ -1,4 +1,4 @@
-package com.example.firebase_login_test
+package com.example.anony_test
 
 import org.junit.Test
 
